@@ -1,0 +1,1 @@
+# This App checks the status of minecraft servers given an IP

@@ -3,8 +3,8 @@ plugins {
     id 'application'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'de.mzte'
+version '0.1'
 
 sourceCompatibility = 1.8
 
@@ -26,7 +26,7 @@ task fatJar(type: Jar) {
     manifest {
         attributes 'Main-Class': mainClassName
     }
-    archiveBaseName = 'export'
+    archiveBaseName = 'MCServerInfo'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }

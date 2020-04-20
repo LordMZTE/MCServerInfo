@@ -17,6 +17,12 @@ public class Gui extends JFrame {
 		setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
 		setMinimumSize(new Dimension(500, 600));
 		initComponents();
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e) {
+			e.printStackTrace();
+		}
 		setVisible(true);
 	}
 

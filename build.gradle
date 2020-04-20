@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'de.mzte'
-version '0.1'
+version 'v0.1r1'
 
 sourceCompatibility = 1.8
 

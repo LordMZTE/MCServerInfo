@@ -6,7 +6,7 @@ plugins {
 group 'de.mzte'
 version 'v0.1r1'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 14
 
 repositories {
     mavenCentral()

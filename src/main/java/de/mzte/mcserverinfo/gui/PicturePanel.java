@@ -2,11 +2,11 @@ package de.mzte.mcserverinfo.gui;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.xml.bind.DatatypeConverter;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.util.Base64;
 
 public class PicturePanel extends JPanel {
 	BufferedImage image;
@@ -15,12 +15,11 @@ public class PicturePanel extends JPanel {
 		setBackground(new Color(0, 0, 0));
 		setVisible(true);
 	}
-
+	//TODO Image should reset if null is passed in
 	public void setImgBase64(String str) throws IOException {
 		String undecoded = str.split(",")[1];
 		BufferedImage img;
-		byte[] imgBytes;
-		imgBytes = DatatypeConverter.parseBase64Binary(undecoded);
+		byte[] imgBytes = Base64.getMimeDecoder().decode(undecoded);
 		ByteArrayInputStream bis = new ByteArrayInputStream(imgBytes);
 		img = ImageIO.read(bis);
 		bis.close();

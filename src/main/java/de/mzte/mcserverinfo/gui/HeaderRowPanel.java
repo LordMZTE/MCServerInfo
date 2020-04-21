@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class HeaderRowPanel extends JPanel {
+	//TODO background should be set to green when the app is working
 
 	JLabel ipLabel;
 	public JTextField ipInput;

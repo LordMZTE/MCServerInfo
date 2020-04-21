@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class Main {
+	//TODO Run Gui on seperate thread
 	public static Gui gui = new Gui();
 	public static void main(String[] args) {
 

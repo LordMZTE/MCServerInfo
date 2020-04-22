@@ -35,6 +35,10 @@ public class MotdPanel extends JPanel {
 	}
 
 	public void setTextHTML(String txt) {
+		if(txt == null) {
+			motdPane.setText("");
+			return;
+		}
 		CleanerProperties props = new CleanerProperties();
 		props.setOmitXmlDeclaration(true);
 		props.setTranslateSpecialEntities(true);

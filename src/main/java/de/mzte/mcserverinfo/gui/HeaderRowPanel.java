@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class HeaderRowPanel extends JPanel {
-	JLabel ipLabel;
+	private JLabel ipLabel;
 	public JTextField ipInput;
 	public JButton startButton;
 	public JButton stopButton;

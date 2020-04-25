@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Base64;
 
 public class PicturePanel extends JPanel {
-	BufferedImage image;
+	private BufferedImage image;
 
 	public PicturePanel() {
 		setBackground(new Color(0, 0, 0));

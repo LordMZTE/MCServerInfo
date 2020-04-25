@@ -13,8 +13,8 @@ public class MotdPanel extends JPanel {
 	public JEditorPane motdPane;
 	public PicturePanel picPanel;
 
-	HTMLEditorKit kit = new HTMLEditorKit();
-	javax.swing.text.Document doc = kit.createDefaultDocument();
+	private HTMLEditorKit kit = new HTMLEditorKit();
+	private javax.swing.text.Document doc = kit.createDefaultDocument();
 
 
 	public MotdPanel() {
